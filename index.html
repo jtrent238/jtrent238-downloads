@@ -3,9 +3,13 @@
 
 <head>
 	<title>jtrent238's Mod Downloads</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" type="image/ico" href="assets/favicon.ico">
+	
 	<script>
 		function displayAdflyPopup(modid) {
 		
@@ -45,28 +49,52 @@
 						console.log("opened");
 					}
 				}
+			displayMessage();
+			}
+			
+			if (modid == "luckyblock") {
+				modelID = "mod_container_luckyblock_no_adfly";
+				elementID = "luckyblock_adfly_open";
+				className = "";
 				
-				function closeMessage() {
-					document.getElementById("mod_container_hammermod_no_adfly").style.display = "none";
-					if(debug == true) {
-						//alert("closed");
-						console.log("close");
-					}
+				//debug
+				if (debug == true){
+					console.log(modelID);
+					console.log(elementID);
+					console.log(className);
 				}
 				
-				// When the user clicks on <span> (x), close the modal
-				//span.onclick = function() {
-				//	model.style.display = "none";
-				//}
-				
-					// When the user clicks anywhere outside of the modal, close it
-					window.onclick = function(event) {
-						if (event.target == modal) {
-							model.style.display = "none";
-						}
-						closeMessage();
+				// When the user clicks the button, open the modal 
+				function displayMessage() {
+					document.getElementById("mod_container_luckyblock_no_adfly").style.display = "block";
+					if(debug == true) {
+						//alert("opened");
+						console.log("opened");
 					}
+				}
+			displayMessage();
+			}
+			
+			if (modid == "ogpig") {
+				modelID = "mod_container_ogpig_no_adfly";
+				elementID = "ogpig_adfly_open";
+				className = "";
 				
+				//debug
+				if (debug == true){
+					console.log(modelID);
+					console.log(elementID);
+					console.log(className);
+				}
+				
+				// When the user clicks the button, open the modal 
+				function displayMessage() {
+					document.getElementById("mod_container_ogpig_no_adfly").style.display = "block";
+					if(debug == true) {
+						//alert("opened");
+						console.log("opened");
+					}
+				}
 			displayMessage();
 			}
 		}
@@ -83,7 +111,7 @@
 	<!-- <img src="assets/img/jtrent238_background.png" alt="Car" style="width:100%"> -->
 
 	<div class="w3-container">
-	  <p>asdklfnaslkdnfalksndflkansdlkfn</p>
+	  <p></p>
 	  
 	<!-- START Container for Hammer Mod -->
 	  <div class="w3-container mod_container">
@@ -119,9 +147,10 @@
 					</div>
 					<br>
 					<div class="w3-center">
-						<a href="#" class="w3-button w3-black">Download*</a>
-						<a href="#" class="w3-button w3-black">Github</a>
-						<a class="w3-button w3-black w3-disabled">Wiki</a>
+						<a href="http://bit.ly/2nWdeE2" class="w3-button w3-lime">Download</a>
+						<a href="https://github.com/jtrent238/Hammer-Mod" class="w3-button w3-lime">Github</a>
+						<a class="w3-button w3-lime w3-disabled">Wiki</a>
+						<a href="https://paypal.me/jtrent238" class="w3-button w3-lime">Donate</a>
 					</div>
 				</div>
 			<br>
@@ -136,13 +165,23 @@
 					  <h2>Hey There!</h2>
 					</header>
 
-					<div class="w3-container">
-					  <p>Some text..</p>
-					  <p>Some text..</p>
+					<div class="w3-container adfly_notice">
+					  <p>It seems you don't want to download via adf.ly? Thats fine I understand adf.ly can be annoying and may mislead you to download something bad that is not the mod.</p>
+					  <p>This is why I am providing a "no adf.ly" link here just for you.</p>
+					  <p>If you would still like to support me feel free to click that donate button.</p>
+					  <div class="w3-container">
+						<div class="w3-center">
+							<a href="https://www.curseforge.com/minecraft/mc-mods/hammer-mod" class="w3-button w3-lime">Download</a>
+							<a href="https://github.com/jtrent238/Hammer-Mod" class="w3-button w3-lime">Github</a>
+							<a class="w3-button w3-lime w3-disabled">Wiki</a>
+							<a href="https://paypal.me/jtrent238" class="w3-button w3-lime">Donate</a>
+						</div>
+						<br>
+					  </div>
 					</div>
 
 					<footer class="w3-container w3-light-green">
-					  <p>Modal Footer</p>
+					  <p></p>
 					</footer>
 
 				  </div>
@@ -185,16 +224,138 @@
 						<img src="assets/img/made_a_video.png" alt="made_a_video" class="made_a_video">
 						<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XXXXXXXXXXX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 					</div>
+					<br>
+					<div class="w3-center">
+						<a href="http://bit.ly/2pslUT4" class="w3-button w3-lime">Download</a>
+						<a href="https://github.com/jtrent238/jtrent238-s-Lucky-Block-Mod" class="w3-button w3-lime">Github</a>
+						<a class="w3-button w3-lime w3-disabled">Wiki</a>
+						<a href="https://paypal.me/jtrent238" class="w3-button w3-lime">Donate</a>
+					</div>
 				</div>
 			<br>
 			<footer class="w3-container w3-green">
-			  <h5>Footer</h5>
+			<div class="w3-animate-opacity">
+				<div id="mod_container_luckyblock_no_adfly" class="w3-modal w3-animate-opacity">
+				  <div class="w3-modal-content">
+
+					<header class="w3-container w3-light-green">
+					  <span onclick="document.getElementById('mod_container_luckyblock_no_adfly').style.display='none'"
+					  class="w3-button w3-display-topright">&times;</span>
+					  <h2>Hey There!</h2>
+					</header>
+
+					<div class="w3-container adfly_notice">
+					  <p>It seems you don't want to download via adf.ly? Thats fine I understand adf.ly can be annoying and may mislead you to download something bad that is not the mod.</p>
+					  <p>This is why I am providing a "no adf.ly" link here just for you.</p>
+					  <p>If you would still like to support me feel free to click that donate button.</p>
+					  <div class="w3-container">
+						<div class="w3-center">
+							<a href="https://www.curseforge.com/minecraft/mc-mods/jtrent238s-lucky-block-mod" class="w3-button w3-lime">Download</a>
+							<a href="https://github.com/jtrent238/jtrent238-s-Lucky-Block-Mod" class="w3-button w3-lime">Github</a>
+							<a class="w3-button w3-lime w3-disabled">Wiki</a>
+							<a href="https://paypal.me/jtrent238" class="w3-button w3-lime">Donate</a>
+						</div>
+						<br>
+					  </div>
+					</div>
+
+					<footer class="w3-container w3-light-green">
+					  <p></p>
+					</footer>
+
+				  </div>
+				</div>
+			</div>
+			  <h5 class="w3-tiny">Looking for Download without adf.ly? <a href="javascript:displayAdflyPopup('luckyblock')" id="luckyblock_adfly_open">Click Here</a></h5>
+			  
 			</footer>
 		  </div>
 		</div>
 
 	  </div>
 	<!-- END Container for Not Enough Lucky Blocks -->
+	<!-- ------------------------------------------- -->
+	<!-- START Container for OGPig: Birth of the creeper -->
+	  <div class="w3-container mod_container">
+		<div class="w3-container">
+		  <div class="w3-card-4 mod_card">
+			<header class="w3-container w3-green">
+			  <h1 class="w3-xlarge">OGPig: Birth of the creeper</h1>
+			</header>
+
+				<div class="w3-container mod_container_desc">
+				  <p>The Original Pig! This mod adds in the original pig. Back when Notch was adding the pig to Minecraft he accidentally gave it the creeper model and that is all this mod is. It adds pigs with the creeper model.</p>
+				  <p>The OGPig functions just like a normal pig, you can breed it, you *cough* might be able to ride it.</p>
+				  <p>The only thing this mod adds is the OGPig (See image).</p>
+					<!-- START mod_container_table -->
+					<div class="mod_container_table">
+						<table class="w3-table w3-bordered w3-centered w3-small mod_version_table">
+							<tr>
+								<th>MC Version</th>
+								<th>Mod Version</th>
+							</tr>
+							<tr>
+								<td>1.7.10</td>
+								<td>1.0.0.0</td>
+							</tr>
+						</table>
+					</div>
+					<!-- STOP mod_container_table -->
+				  <hr class="">
+					<div class="w3-container mod_container_video">
+						<img src="assets/img/made_a_video.png" alt="made_a_video" class="made_a_video">
+						<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XXXXXXXXXXX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					</div>
+					<br>
+					<div class="w3-center">
+						<a href="http://bit.ly/2n0OSZd" class="w3-button w3-lime">Download</a>
+						<a href="https://github.com/jtrent238/OGPig" class="w3-button w3-lime">Github</a>
+						<a class="w3-button w3-lime w3-disabled">Wiki</a>
+						<a href="https://paypal.me/jtrent238" class="w3-button w3-lime">Donate</a>
+					</div>
+				</div>
+			<br>
+			<footer class="w3-container w3-green">
+			<div class="w3-animate-opacity">
+				<div id="mod_container_ogpig_no_adfly" class="w3-modal w3-animate-opacity">
+				  <div class="w3-modal-content">
+
+					<header class="w3-container w3-light-green">
+					  <span onclick="document.getElementById('mod_container_ogpig_no_adfly').style.display='none'"
+					  class="w3-button w3-display-topright">&times;</span>
+					  <h2>Hey There!</h2>
+					</header>
+
+					<div class="w3-container adfly_notice">
+					  <p>It seems you don't want to download via adf.ly? Thats fine I understand adf.ly can be annoying and may mislead you to download something bad that is not the mod.</p>
+					  <p>This is why I am providing a "no adf.ly" link here just for you.</p>
+					  <p>If you would still like to support me feel free to click that donate button.</p>
+					  <div class="w3-container">
+						<div class="w3-center">
+							<a href="https://www.curseforge.com/minecraft/mc-mods/ogpig-birth-of-the-creeper" class="w3-button w3-lime">Download</a>
+							<a href="https://github.com/jtrent238/OGPig" class="w3-button w3-lime">Github</a>
+							<a class="w3-button w3-lime w3-disabled">Wiki</a>
+							<a href="https://paypal.me/jtrent238" class="w3-button w3-lime">Donate</a>
+						</div>
+						<br>
+					  </div>
+					</div>
+
+					<footer class="w3-container w3-light-green">
+					  <p></p>
+					</footer>
+
+				  </div>
+				</div>
+			</div>
+			  <h5 class="w3-tiny">Looking for Download without adf.ly? <a href="javascript:displayAdflyPopup('ogpig')" id="ogpig_adfly_open">Click Here</a></h5>
+			  
+			</footer>
+		  </div>
+		</div>
+
+	  </div>
+	<!-- END Container for OGPig: Birth of the creeper -->
 	
 	</div>
 <br>

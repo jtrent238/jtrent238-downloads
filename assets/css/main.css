@@ -8,6 +8,7 @@ div.banner > img.jtrent238_logo_banner {
 	float: left;
 	max-width: 5%;
 	height: auto;
+	padding: 5px;
 }
 
 div.mod_container {
@@ -34,9 +35,7 @@ div.mod_container_video > img.made_a_video {
 	max-width: 100%;
 	height: auto;
 }
-	
-#mod_container_hammermod_no_adfly {
-	display: none;
-	float: left;
-}
 
+div.adfly_notice {
+	color: red;
+}
