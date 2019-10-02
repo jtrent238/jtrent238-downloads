@@ -1,0 +1,42 @@
+body {
+	background-image: url("../img/background.jpg"); /* The image used */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+div.banner > img.jtrent238_logo_banner {
+	float: left;
+	max-width: 5%;
+	height: auto;
+}
+
+div.mod_container {
+	max-width: 33%;
+	height: auto;
+	margin: auto;
+	float: left;
+}
+
+div.mod_card {
+	width: 100%;
+	background: rgb(52, 235, 168);
+}
+
+div.mod_container_table > div.mod_version_table {
+	padding: 0px;
+}
+
+div.mod_container_video {
+	padding-left: 8%;
+}
+
+div.mod_container_video > img.made_a_video {
+	max-width: 100%;
+	height: auto;
+}
+	
+#mod_container_hammermod_no_adfly {
+	display: none;
+	float: left;
+}
+
